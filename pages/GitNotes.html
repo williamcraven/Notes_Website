@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTP-8">
+    <title>Git Notes</title>
+  </head>
+
+  <Body>
+    <a href="../index.html">Back to Homepage</a>
+
+    <h3>Git Notes:</h3>
+    <p>This is a reference list of the most commonly used Git commands.</p>
+    <ul>
+      <li>Commands related to a remote repository:</li>
+      <ul>
+        <li>git clone git@github.com:USER-NAME/REPOSITORY-NAME.git</li>
+        <li>git push or git push origin main (both accomplish the same goal in this context)</li>
+      </ul>
+      <li>Commands related to the workflow:</li>
+      <ul>
+        <li>git add . adds all files to the staging area</li>
+        <li>git commit -m "A message describing what you have done to make this snapshot different"</li>
+      </ul>
+      <li>Commands related to checking status or log history:</li>
+      <ul>
+        <li>git status</li>
+        <li>git log</li>
+      </ul>
+    </ul>
+    <p>The basic Git syntax is program | action | destination. For example:</p>
+    <ul>
+      <li>git add . is read as git | add | . where the period represents everything in the current directory.</li>
+      <li>git commit -m "message" is read as git | commit -m | "message"</li>
+      <li>git status is read as git | status | (no destination).</li>
+    </ul>
+  </Body>
+</html>

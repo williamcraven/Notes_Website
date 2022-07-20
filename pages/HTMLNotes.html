@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTP-8">
+    <title>HTML Notes</title>
+  </head>
+
+  <Body>
+    <a href="../index.html">Back to Homepage</a>
+
+    <h3>HTML</h3>
+    <ul>
+      <li>What is an HTML Tag? Triangle brackets. For example, p, /p, head, or /head. Using the correct tag has an impact on how your website shows up in search engines, and how accessible it is to users who rely on assistive technologies.
+      </li>
+      <li>Using the correct elements for content is called Semanti HTML.</li>
+      <li>What is an HTML element? Pieces of content wrapped in opening and closing HTML tags.</li>
+      <li>Every HTML page starts with a doctype declaration and HTML lang attriblute.</li>
+      <li>Next, we type in the Head element. We put important meta-information about our web pages. We do not put anything that displays content on the website.</li>
+      <li>Inside the head: meta charset="UTF-8"</li>
+      <li>Also in the head: Title element: title My First Webpage /title</li>
+      <li>To open your file, you can either:</li>
+      <ol>
+        <li>Double click the actual file in your GUI</li>
+        <li>Drag the file to your broswer from VSCode</li>
+        <li>Using terminal in the directory containing the file, type open ./index.html</li>
+      </ol>
+    </ul>
+    <h4>Basic Text</h4>
+    <ul>
+      <li>Body element. Bulk of website is inside these: Body /Body</li>
+      <li>strong /strong this makes text bold</li>
+      <li>em /em this makes text italisized</li>
+      <li>!-- This is how to make a comment. enter your comment here and close this text with triangle brackets -- </li>
+    </ul>
+    <h4>2 types of Lists:</h4>
+    <ol>
+      <li>Ordered Lists (Like this one). use ol and /ol. Inside of those tags, use li and /li for each item in the list.</li>
+      <li>And Unordered Lists</li>
+      <ul>
+        <li>This is an unordered list. use ul and ul/.</li>
+        <li>As you can see, you can put lists inside of lists.</li>
+        <li>For an ordered (numbered) list, you can start on any number by saying: ol start="30" instead of just the normal "ol" start.</li>
+      </ul>
+    </ol>
+    <h4>Make a Link</h4>
+    <ul>
+      <li>To make a link, type a href="Link to file or website here">Name of link in the website here /a.</li>
+      <li>Links (and images) can be relative and absolute. Relative links are derived from local files on your computer, and absolute links derive from remote sources that must include the full web address. Protocol-DomainName-.com</li>
+    </ul>
+    <h4>Make an image</h4>
+    <ul>
+      <li>Images are created using the same format as links, but there is no closing tag /img does not exist.</li>
+      <li>Images also include an alt="Describe Image" For visually impaired users or if the image does not load.</li>
+      <li>Type this: img src="Link to web image or local file link" alt="Text that describes image" and that's it. No closing tag line.</li>
+    </ul>
+    <h4>Parent Directories</h4>
+    <ul>
+      <li>What if we want to use our dog image in the about page?</li>
+      <li>What if we want to go back to our home page?</li>
+      <li>For example, to call back our homepage if we are in our About page: a/ href="../index.html">Back to homepage /a This will take us back to our home page by going back one tab then allowing us to use our regular index html file.</li>
+    </ul>
+  </Body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTP-8">
+    <title>CLI Notes</title>
+  </head>
+
+  <Body>
+    <a href="../index.html">Back to Homepage</a>
+    
+    <h3>CLI Notes:</h3>
+    <h4><em>Introducing the Shell</em></h4>
+    <ul>
+      <li>A shell is a program whose primary purpose is to read commands and run other programs.</li>
+      <li>This lesson uses Bash, the default shell in many implementations of Unix.</li>
+      <li>Programs can be run in Bash by entering commands at the command-line prompt.
+      </li>
+      <li>The shell’s main advantages are its high action-to-keystroke ratio, its support for automating repetitive tasks, and its capacity to access networked machines.</li>
+      <li>The shell’s main disadvantages are its primarily textual nature and how cryptic its commands and operation can be.</li>
+    </ul>
+    <h4><em>Navigating files and directories</em></h4>
+    <ul>
+      <li>The file system is responsible for managing information on the disk.</li>
+      <li>Information is stored in files, which are stored in directories(folders)</li>
+      <li>Directories can also store other directories, which then form a directory tree.</li>
+      <li>pwd prints the user's current working directory.</li>
+      <li>ls [path] prints a listing of a specific file or directory; ls on its own lists the current workintg directory.</li>
+      <li>Most commands take options that begin with a single -</li>
+      <li>Directory names in a path are separated with / on  Unix, but \ on windows.</li>
+      <li>/ on its own is the root directory of the whole file system.</li>
+      <li>A relative path specifies a location starting from the current location.</li>
+      <li>An absolute path specifies a location from the root of the file system.</li>
+      <li>. on its own means 'the current directory'. .. means the 'the directory above the current one'.</li>
+    </ul>
+    <h4><em>Working with Files and Directories</em></h4>
+    <ul>
+      <li>cp [old] [new] copies a file</li>
+      <li>mkdir [path] creates a new directory</li>
+      <li>mv [old] [new] moves (or renames) a file or directory.</li>
+      <li>rm [path] removes (deletes) a file.</li>
+      <li>* matches zero or more characters in a filename, so *.txt matches all files ending in a .txt. This is how you can edit hundreds or even thousands of files at the same time.</li>
+      <li>? matches any single character in a filename, so ?.txt matches a.txt but not any.txt.</li>
+      <li>The shell does not have a trash bin: Once something is deleted, it's really gone.</li>
+      <li>Most files' names are something.extension. The extension isn't required, and doesn't guarantee anything, but is normally used to indicate the type of data in the file.</li>
+      <li>Depending on the type of work you do, you may need a more powerful text editor than Nano.</li>
+    </ul>
+    <h4><em>Pipelines</em></h4>
+    <ul>
+      <li>wc counts lines, words, and characters in its inputs.</li>
+      <li>cat displays the contents of its inputs.</li>
+      <li>sort sorts its inputs.</li>
+      <li>head displays a specified number of lines from the top of the document.</li>
+      <li>tail displays a specified number of lines from the bottom of the document.</li>
+      <li>command > [file] redirects a command's output to a file (overwriting any existing content)</li>
+      <li>command >> [file] appends a command's output to a file.</li>
+      <li>[first] | [second] is a pipeline: the output of the first command is used as the input to the second.</li>
+      <li>The best way to use the shell is to use pipes to combine simple single-purpose programs (filters)</li>
+    </ul>
+  </Body>
+</html>
