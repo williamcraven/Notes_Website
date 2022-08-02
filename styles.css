@@ -1,3 +1,193 @@
 h3 {
   color: #29a329;
 }
+
+.color {
+  color: pink;
+}
+
+.font {
+  font-family:'Courier New', Courier, monospace
+}
+
+.big {
+  font-size: 40px;
+}
+
+.margin {
+  margin-top: 90px;
+}
+
+.border {
+  border-style: solid;
+  border-width: 5px;
+}
+
+.padding {
+  padding-left: 50px;
+  padding-right: 50px;
+  border-style: dotted;
+}
+
+.flex-container {
+  height: auto;
+  max-width: 800px;
+  border: solid;
+  display: flex;
+  gap: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 40px;
+}
+
+.flex-container p {
+  border: solid 1px;
+  padding: 10px;
+  font-size: 12px;
+  flex: 1 1 0;
+}
+
+.flex-container ul {
+  border: solid 1px;
+  padding: 20px;
+  font-size: 12px;
+  flex: 1 1 auto;
+}
+
+.links {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  height: auto;
+  width: 600px;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 8px;
+}
+
+.links a {
+  border: solid;
+  padding: 10px;
+  flex: 0 1 auto;
+}
+
+.test1 {
+  display: flex;
+  border: solid;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.test1 div {
+  border: solid;
+  width: 30px;
+  height: 50px;
+}
+
+.test2 {
+  border: 5px dotted;
+  height: 200px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.test2 div {
+  border: 2px dashed red;
+  height: 50px;
+  width: 40px;
+}
+
+.test3 {
+  border: 5px dashed blueviolet;
+  height: 200px;
+  width: 600px;
+  margin: 20px auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.test3 div {
+  border: 5px dotted rgb(123, 74, 0);
+  height: 80px;
+  width: 40px;
+}
+
+.test4 {
+  border: 5px dashed rgb(43, 226, 101);
+  height: 200px;
+  width: 600px;
+  margin: 20px auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.test4 div {
+  border: 5px dotted rgb(4, 0, 123);
+  height: 80px;
+  width: 40px;
+}
+
+.flex-container2 {
+  display: flex;
+  border: solid red;
+  height: 600px;
+  width: 700px;
+  margin: 60px;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-between;
+
+}
+
+.flex-container2 div {
+  border: 2px dashed green;
+  padding: 40px;
+  height: 120px;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.flex-container3 {
+  height: auto;
+  width: 800px;
+  border: solid;
+  display: flex;
+  gap: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 40px;
+}
+
+.flex-container3 p {
+  border: solid green;
+  width: 130px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.link {
+  margin: 50px;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.flexboxpic {
+  margin-left: 50px;
+  margin-top: 50px;
+}

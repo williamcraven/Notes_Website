@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Notes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body style="background-color: rgba(0, 192, 251, 0.094);">
+    <a href="../index.html">Back to Homepage</a>
+
+    <h1>CSS Notes</h1>
+    <p>CSS is an interesting programming language. So far, I have been able to do some fun things. <span class="color">I can change color</span>, <span class="font">change to a different font</span>, <span class="big">or even make the font huge!</span></p>
+
+    <p class="margin">A big part of CSS is using margins to separate things, as you can see above. <em>A note on margins: If margins are specified between two objects that are right next to each other, they will not add together but the space between them will only be the larger value of the two margins.</em> </p>
+
+    <p>The box model encompasses everything I just spoke about in the previous paragraph. Content>padding>borders>margins. In addition to margins, you have <span class="border">borders.</span> Margins are outside borders, and padding is inside borders. Padding is used to create <span class="padding">space</span> between content and borders. </p>
+    
+    <div class="flex-container">
+      <p>There are a few things in regards to spacing and line breaks: Each piece of content has an outer display and an inner display. Outer display is how an element will behave in relation to the document: Each piece of content also is either a block element or an inline element. An inline element (such as span or a) will remain on the same horizontal plane as the element next to it, while a block element (such as p or h1 or div) will always create a line break. Inner display type is how elements inside of a box will behave. These elements follow 'normal flow', the default setting in CSS/HTML.</p>
+
+      <p>display: inline-block vs display: inline vs display: block</p>
+
+      <p><span style="border: solid; padding: 10px; display:inline;">Display: inline; </span>- the width and height are not respected, and padding on the top and bottom are present, but overlap with lines above and under.</p>
+
+      <p><span style="border: solid; padding: 15px; display:inline-block;">Display: inline-block; </span>- here, the width, height, and padding are respected, but the element does not cause a line break.</p>
+
+      <p><span style="border: solid; padding: 15px; display:block;">Display: block; </span>- here, everything is respected and the element creates a line break.</p>
+
+
+   </div>
+   <h3>Flexbox:</h3>
+   <div class="flex-container">
+
+    <p>Flexbox is a way to arrange items into rows or columns. Flexbox is a relatively recent tool that will allow elements to expand or shrink inside of their respective containers. A flex container is any container with display: flex; A flex item is any element that lives directly inside of a flex container.</p>
+
+    <p><strong>'flex'</strong> is actually shorthand for <strong>flex-grow, flex-shrink, and flex-basis.</strong> The default value for flex is flex-grow 0, flex-shrink: 1, and flex-basis: 0%.</p>
+
+    <p>When we apply flex: 1;, we are actually specifying flex: 1 1 0%;. This means that each div will "grow" to the same amount. The result of this is that every div ends up the exact same size. If we instead add flex: 2 to just one of the divs, then that div would grow to 2x the size of the others.</p>
+
+    <p>Flex-basis simply sets the initial size of a flex item, so any sort of growing or shrinking starts from that baseline size.</p>
+
+    <p>The default direction for a flex container is horizontal, or row, but you can change the direction to vertical, or column: css .flex-container { flex-direction: column }</p>
+   </div>
+
+   <h3>Justify-content and axes</h3>
+   <div class="flex-container">
+    <p>No matter which direction you're using, flex containers have 2 axes: The <strong>main axis</strong> and the <strong>cross axis.</strong></p>
+    <p><strong>justify-content: center;</strong> aligns items across the main axis, which will be the horizontal plane. <strong>align-items: center;</strong> will align items on the cross axis, which is the vertical plane.</p>
+    <p>flex-wrap: wrap; will make items that are too large for their container break into a new line instead of overflowing into space outside their container. (flex-wrap: nowrap; is the default setting)</p>
+    <p>You may combine flex-direction and flex-wrap by using flex-flow: row wrap; or flex-flow: column nowrap;</p>
+   </div>
+
+   <h3>align-items: and align-self: (Flexbox):</h3>
+   <div class="flex-container">
+        <ul>Align-items: options;
+          <li>align-items: flex-start; (this means all items are aligned to the start of the  cross-axis)</li>
+          <li>align-items: flex-end; (all items are aligned to the end of the cross axis)</li>
+          <li>align-items: center;</li>
+          <li>align-items: stretch; (the default setting)</li>
+          <li>align-items: baseline;</li>
+        </ul>
+      <p>You may also apply all of these align-items properties to individual items with <strong>align-self: flex-start, flex-end, stretch, center, baseline, etc.</strong></p>
+   </div>
+
+   <h3>align-content</h3>
+
+   <div class="flex-container2">
+     <div>align-content</div>
+     <div>specifies</div>
+     <div>spacing /alignment</div>
+     <div>properties</div>
+     <div>of</div>
+     <div>rows</div>
+     <div>of</div>
+     <div>content</div>
+     <div>!</div>
+   </div>
+
+   <div class="flex-container3">
+    <p>We don't have a "justify-items" or "justify-self" property available to us on the main axes as our items are teated as a group on that axis.
+    <p class="push">However,</p>
+    <p>We are able to separate elements using</p>
+    <p>a margin-left: auto </p>
+   </div>
+
+   <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox">Typical Uses of Flexbox!</a>
+
+   <img src="../img/flexboxuses.jpeg"
+        class="flexboxpic">
+  </body>
+</html>
